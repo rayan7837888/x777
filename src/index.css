@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Tajawal', sans-serif;
+  }
+}
+
+.font-dodge {
+  font-family: 'Chakra Petch', 'Teko', sans-serif;
+  letter-spacing: 0.05em;
+}
+
+.font-num {
+  font-family: 'Chakra Petch', monospace, sans-serif;
+}
+
+/* Dodge iconic red stripes */
+.dodge-slashes {
+  display: inline-flex;
+  gap: 4px;
+  transform: skewX(-24deg);
+}
+
+.dodge-slash {
+  background-color: #E50914;
+  height: 100%;
+  border-radius: 1px;
+}
+
+/* Carbon fiber pattern */
+.bg-carbon {
+  background-color: #121212;
+  background-image: 
+    radial-gradient(rgba(255, 255, 255, 0.06) 15%, transparent 16%),
+    radial-gradient(rgba(255, 255, 255, 0.06) 15%, transparent 16%);
+  background-size: 12px 12px;
+  background-position: 0 0, 6px 6px;
+}
+
+/* Smooth custom scrollbars */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #262626;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #dc2626;
+}
